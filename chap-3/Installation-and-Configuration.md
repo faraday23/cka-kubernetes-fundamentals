@@ -82,9 +82,9 @@ given to kubeadm init in the following step, whatever the value may be. Avoid co
 instance.
 
 ## use less command to page through the file. Look for the IPV4 pool assigned to the containers.
-`less calico.yaml`
+`less calico.yaml
 
-`calico.yaml`
+calico.yaml`
 
 ## The default IPv4 pool to create on startup if none exists. Pod IPs will be
 ## chosen from this range. Changing this value after installation will have
