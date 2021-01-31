@@ -86,11 +86,11 @@ instance.
 
 calico.yaml`
 
-## The default IPv4 pool to create on startup if none exists. Pod IPs will be chosen from this range. Changing this value after installation will have no effect. This should fall within 
-`--cluster-cidr.`
-` - name: CALICO_IPV4POOL_CIDR`
-`   value: "192.168.0.0/16"`
-
+## The default IPv4 pool to create on startup if none exists. Pod IPs will be chosen from this range. Changing this value after installation will have no effect. This should fall within `--cluster-cidr.`
+```
+ - name: CALICO_IPV4POOL_CIDR
+   value: "192.168.0.0/16"
+```
 
 11. Find the IP address of the primary interface of the master server. The example below would be the ens4 interface and
 an IP of 10.128.0.3, yours may be different.
