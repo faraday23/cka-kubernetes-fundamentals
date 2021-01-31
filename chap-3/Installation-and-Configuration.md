@@ -82,9 +82,11 @@ given to kubeadm init in the following step, whatever the value may be. Avoid co
 instance.
 
 ## use less command to page through the file. Look for the IPV4 pool assigned to the containers.
-`less calico.yaml
+```
+less calico.yaml
 
-calico.yaml`
+calico.yaml
+```
 
 ## The default IPv4 pool to create on startup if none exists. Pod IPs will be chosen from this range. Changing this value after installation will have no effect. This should fall within `--cluster-cidr.`
 ```
@@ -171,12 +173,13 @@ cluster. Take a quick look at the configuration file once it has been copied and
 `sudo chown $(id -u):$(id -g) $HOME/.kube/config`
 
 ## Less is a command line utility that displays the contents of a file or a command output, one page at a time. 
-`less .kube/config
+```
+less .kube/config
 
 apiVersion: v1
 clusters:
-- cluster:`
-
+- cluster:
+```
 
 16. Apply the network plugin configuration to your cluster. 
 Remember to copy the file to the current, non-root user directory
@@ -217,7 +220,8 @@ kubectl -n kube-s<Tab> g<Tab> po<Tab>`
 19. View other values we could have included in the kubeadm-config.yaml file when creating the cluster.
 
 ## This command prints objects such as the default init configuration that is used for 'kubeadm init'.
-`sudo kubeadm config print init-defaults`
+```
+sudo kubeadm config print init-defaults
 
 `apiVersion: kubeadm.k8s.io/v1beta2
 bootstrapTokens:
@@ -228,6 +232,7 @@ ttl: 24h0m0s
 usages:
 - signing
 - authentication
-kind: InitConfiguration`
+kind: InitConfiguration
+```
 
 
