@@ -213,9 +213,11 @@ you see an error instead such as -bash: _get_comp_words_by_ref: command not foun
 install the software, log out and back in.
 
 ## describe default namespace
-`kubectl des<Tab> n<Tab><Tab> lfs458-<Tab>
+```
+kubectl des<Tab> n<Tab><Tab> lfs458-<Tab>
 
-kubectl -n kube-s<Tab> g<Tab> po<Tab>`
+kubectl -n kube-s<Tab> g<Tab> po<Tab>
+```
 
 19. View other values we could have included in the kubeadm-config.yaml file when creating the cluster.
 
@@ -223,7 +225,7 @@ kubectl -n kube-s<Tab> g<Tab> po<Tab>`
 ```
 sudo kubeadm config print init-defaults
 
-`apiVersion: kubeadm.k8s.io/v1beta2
+apiVersion: kubeadm.k8s.io/v1beta2
 bootstrapTokens:
 - groups:
 - system:bootstrappers:kubeadm:default-node-token
