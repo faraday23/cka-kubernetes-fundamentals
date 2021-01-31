@@ -8,7 +8,8 @@ user name may be different than the one shown, student. The IP used in the examp
 will use.
 
 ## ssh into node
-ssh -i LFS458.pem student@35.226.100.87
+```ssh -i LFS458.pem student@35.226.100.87
+```
 
 //make sure to add firewall rule
 Warning: Permanently added '35.226.100.87' (ECDSA) to the list of known hosts.
