@@ -8,8 +8,8 @@ user name may be different than the one shown, student. The IP used in the examp
 will use.
 
 ## ssh into node
-```ssh -i LFS458.pem student@35.226.100.87
-```
+`ssh -i LFS458.pem student@35.226.100.87`
+
 
 //make sure to add firewall rule
 Warning: Permanently added '35.226.100.87' (ECDSA) to the list of known hosts.
@@ -18,20 +18,20 @@ Warning: Permanently added '35.226.100.87' (ECDSA) to the list of known hosts.
 2. Become root and update and upgrade the system. 
 
 ## Become root
-sudo -i
+`sudo -i`
 
 ## update and upgrade the system
-apt-get update && apt-get upgrade -y
+`apt-get update && apt-get upgrade -y`
 
 
 3. Install a text editor like nano, vim, or emacs. Any will do, the labs use a popular option, vim.
 ## install vim
-apt-get install -y vim
+`apt-get install -y vim`
 
 4. The main choices for a container environment are Docker. The default when building the cluster with kubeadm on Ubuntu.
 
 (a) If using Docker:
-apt-get install -y docker.io
+`apt-get install -y docker.io`
 
 
 5. Add a new repo for kubernetes. You could also download a tar file or use code from GitHub. Create the file and add an
@@ -39,7 +39,7 @@ entry for the main repo for your distribution. We are using the Ubuntu 18.04 but
 software, also include the key word main. Note there are four sections to the entry.
 
 ## create vim file for kubernetes-=xenial repo
-vim /etc/apt/sources.list.d/kubernetes.list
+`vim /etc/apt/sources.list.d/kubernetes.list`
 
 deb http://apt.kubernetes.io/ kubernetes-xenial main
 
